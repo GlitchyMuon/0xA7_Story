@@ -1,0 +1,34 @@
+{
+    "name": "Input Controller",
+    "maps": [
+        {
+            "name": "Mouse Control",
+            "id": "f04673e5-97f3-4052-9125-afd11b39c129",
+            "actions": [
+                {
+                    "name": "Left Mouse Click",
+                    "type": "Button",
+                    "id": "934a8113-ed1d-4e0d-9c8c-90b4c8c599cc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "56c7ef63-bf0d-4c84-9434-5aac5008cdb1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Mouse Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
