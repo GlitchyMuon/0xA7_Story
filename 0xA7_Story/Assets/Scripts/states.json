@@ -1,0 +1,69 @@
+{
+    "options": [
+        {
+            "state": "Start",
+            "answer":["Alone", "House", "Moon"],
+            "options": ["See", "Hear"]
+        },
+        {
+            "state": "See",
+            "answer":["Someone", "Knife"],
+            "options": ["Bike", "Scream"]
+        },
+        {
+            "state": "Bike",
+            "answer":["Forest", "Lightning"],
+            "options": ["Left", "Right"]
+        },
+        {
+            "state": "Scream",
+            "answer":["Death"],
+            "options": ["Start Again"]
+        },
+        {
+            "state": "Left",
+            "answer":["Present"],
+            "options": ["Open1", "Open2"]
+        },
+        {
+            "state": "Right",
+            "answer":["Loop", "House", "Someone", "Knife", "Death"],
+            "options": ["Start Again"]
+        },
+        {
+            "state": "Open1",
+            "answer":["Bomb", "Death"],
+            "options": ["Start Again"]
+        },
+        {
+            "state": "Open2",
+            "answer":["Money", "House", "Martini"],
+            "options": ["Yeah! - Start Again"]
+        },
+        {
+            "state": "Hear",
+            "answer":["Bell", "Alien", "Flowers"],
+            "options": ["Invite", "Follow"]
+        },
+        {
+            "state": "Invite",
+            "answer":["Alien", "No", "Sad"],
+            "options": ["Start Again"]
+        },
+        {
+            "state": "Follow",
+            "answer":["Earth", "Discussion", "Heart"],
+            "options": ["Temperature", "Radio"]
+        },
+        {
+            "state": "Temperature",
+            "answer":["Bed", "Pepper", "Scissor", "Happy"],
+            "options": ["Yeah!"]
+        },
+        {
+            "state": "Radio",
+            "answer":["Music", "Alien", "No", "Sad"],
+            "options": ["Start Again"]
+        }
+  ]
+}
