@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 
 public class JSONReaderSymboles : MonoBehaviour
 {
     public TextAsset textJSON;
+    public Dictionary<string, string> symboles;
 
     [System.Serializable]
     public class Words
@@ -16,7 +18,7 @@ public class JSONReaderSymboles : MonoBehaviour
     [System.Serializable]
     public class WordsData
     {
-        public Dictionary<string, string> wordsDictionary;
+        public Words[] words;
     }
 
 
@@ -24,6 +26,12 @@ public class JSONReaderSymboles : MonoBehaviour
     {
         WordsData data = JsonUtility.FromJson<WordsData>(textJSON.text);
 
-        Dictionary<string, string> wordsDictionary = data.wordsDictionary;
+        symboles = new Dictionary<string, string>();
+        foreach(Words word in data.words)
+        {
+            symboles.Add(word.key, word.value);
+        }
+
+        Debug.Log(symboles["Hear"]);
     }
 }

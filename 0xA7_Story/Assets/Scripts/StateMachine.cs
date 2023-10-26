@@ -21,6 +21,7 @@ public class StateMachine : MonoBehaviour
     }
 
     public StoryState state;
+    public JSONReaderSymboles textSymbol;
 
     void Start()
     {
