@@ -1,5 +1,5 @@
 {
-    "options": [
+    "states": [
         {
             "state": "Start",
             "answer":["Alone", "House", "Moon"],
@@ -64,6 +64,12 @@
             "state": "Radio",
             "answer":["Music", "Alien", "No", "Sad"],
             "options": ["Start Again"]
+        },
+        {
+            "state": "Pause"
+        },
+        {
+            "state": "Quit"
         }
   ]
 }
