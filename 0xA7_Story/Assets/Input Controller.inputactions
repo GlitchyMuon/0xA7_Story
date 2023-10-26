@@ -2,11 +2,11 @@
     "name": "Input Controller",
     "maps": [
         {
-            "name": "Mouse Control",
+            "name": "MouseControlActionMap",
             "id": "f04673e5-97f3-4052-9125-afd11b39c129",
             "actions": [
                 {
-                    "name": "Left Mouse Click",
+                    "name": "Left Mouse Click Confirm",
                     "type": "Button",
                     "id": "934a8113-ed1d-4e0d-9c8c-90b4c8c599cc",
                     "expectedControlType": "Button",
@@ -23,7 +23,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Left Mouse Click",
+                    "action": "Left Mouse Click Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
