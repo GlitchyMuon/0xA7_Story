@@ -8,6 +8,7 @@ public class PlayASoundOnClick : MonoBehaviour
     public AudioClip hover;
     public AudioClip confirm;
 
+    [HideInInspector]
     public MouseControl MouseIsHovering;
     
     // Start is called before the first frame update
