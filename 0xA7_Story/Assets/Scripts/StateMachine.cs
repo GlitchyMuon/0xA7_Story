@@ -40,9 +40,14 @@ public class StateMachine : MonoBehaviour
     public OnClickSwitchState leftButton;
     public OnClickSwitchState rightButton;
 
+    public AudioSource ambientMusicSciFi;
+    public AudioSource ambientMusicHorror;
+
     void Start()
     {
         state = StoryState.Start;
+        ambientMusicSciFi.enabled = false;
+        ambientMusicHorror.enabled = false;
     }
    
     void Update()
@@ -60,15 +65,20 @@ public class StateMachine : MonoBehaviour
                 webdingsTextOption1.SetText(text.symboles["Hear"]);
                 webdingsTextOption2.SetText(text.symboles["See"]);
 
+                ambientMusicSciFi.enabled = false;
+                ambientMusicHorror.enabled = false;
+
                 leftButton.buttonState = StoryState.Hear;
                 rightButton.buttonState = StoryState.See;
 
                 break;
 
             case StoryState.Hear:
-                webdingsTextStory.SetText(text.symboles["Bell"] + text.symboles["Alien"] + text.symboles["Flowers"]);
+                webdingsTextStory.SetText(text.symboles["Bell"] + text.symboles["Alien"] + text.symboles["Heart"]);
                 webdingsTextOption1.SetText(text.symboles["Invite"]);
                 webdingsTextOption2.SetText(text.symboles["Follow"]);
+
+                ambientMusicSciFi.enabled = true;
 
                 leftButton.buttonState = StoryState.Invite;
                 rightButton.buttonState = StoryState.Follow;
@@ -79,6 +89,8 @@ public class StateMachine : MonoBehaviour
                 webdingsTextStory.SetText(text.symboles["Someone"] + text.symboles["Knife"]);
                 webdingsTextOption1.SetText(text.symboles["Bike"]);
                 webdingsTextOption2.SetText(text.symboles["Scream"]);
+
+                ambientMusicHorror.enabled = true;
 
                 leftButton.buttonState = StoryState.Bike;
                 rightButton.buttonState = StoryState.Scream;
