@@ -22,9 +22,7 @@ public class StateMachine : MonoBehaviour
         Left,
         Right,
         Open1,
-        Open2,
-        Pause,
-        Quit
+        Open2
     }
 
     public StoryState state;
@@ -44,62 +42,12 @@ public class StateMachine : MonoBehaviour
 
     void Start()
     {
-
         state = StoryState.Start;
     }
    
     void Update()
     {
-
         SwitchState();
-/*
-        switch(state)
-        {
-
-            case StoryState.Start:
-            
-                break;
-
-            case StoryState.Hear:
-                break;
-
-            case StoryState.Invite:
-                break;
-
-            case StoryState.Follow:
-                break;
-
-            case StoryState.Radio:
-                break;
-
-            case StoryState.Temperature:
-                break;
-
-            case StoryState.See:
-                break;
-
-            case StoryState.Bike:
-                break;
-
-            case StoryState.Scream:
-                break;
-
-            case StoryState.Left:
-                break;
-
-            case StoryState.Right:
-                break;
-
-            case StoryState.Open1:
-                break;
-
-            case StoryState.Open2:
-                break;
-            case StoryState.Pause:
-                break;
-        }
-        */
- 
     }
 
     public void SwitchState()
@@ -122,8 +70,8 @@ public class StateMachine : MonoBehaviour
                 webdingsTextOption1.SetText(text.symboles["Invite"]);
                 webdingsTextOption2.SetText(text.symboles["Follow"]);
 
-                leftButton.buttonState = StoryState.Hear;
-                rightButton.buttonState = StoryState.See;
+                leftButton.buttonState = StoryState.Invite;
+                rightButton.buttonState = StoryState.Follow;
                 
                 break;
 
@@ -132,30 +80,48 @@ public class StateMachine : MonoBehaviour
                 webdingsTextOption1.SetText(text.symboles["Bike"]);
                 webdingsTextOption2.SetText(text.symboles["Scream"]);
 
+                leftButton.buttonState = StoryState.Bike;
+                rightButton.buttonState = StoryState.Scream;
+
                 break;
 
             case StoryState.Invite:
                 webdingsTextStory.SetText(text.symboles["Alien"] + text.symboles["No"] + text.symboles["Sad"]);
                 webdingsTextOption1.SetText(text.symboles["Start Again"]);
+                webdingsTextOption2.SetText(text.symboles["Start Again"]);
+
+                leftButton.buttonState = StoryState.Start;
+                rightButton.buttonState = StoryState.Start;
                 
                 break;
 
             case StoryState.Follow:
-                webdingsTextStory.SetText(text.symboles["Heart"] + text.symboles["Discussion"]);
+                webdingsTextStory.SetText(text.symboles["Earth"] + text.symboles["Heart"] + text.symboles["Discussion"]);
                 webdingsTextOption1.SetText(text.symboles["Radio"]);
                 webdingsTextOption2.SetText(text.symboles["Temperature"]);
+
+                leftButton.buttonState = StoryState.Radio;
+                rightButton.buttonState = StoryState.Temperature;
 
                 break;
 
             case StoryState.Radio:
                 webdingsTextStory.SetText(text.symboles["Music"] + text.symboles["Alien"] + text.symboles["No"] + text.symboles["Sad"]);
                 webdingsTextOption1.SetText(text.symboles["Start Again"]);
+                webdingsTextOption2.SetText(text.symboles["Start Again"]);
+
+                leftButton.buttonState = StoryState.Start;
+                rightButton.buttonState = StoryState.Start;
 
                 break;
 
             case StoryState.Temperature:
                 webdingsTextStory.SetText(text.symboles["Bed"] + text.symboles["Pepper"] + text.symboles["Scissor"] + text.symboles["Happy"]);
                 webdingsTextOption1.SetText(text.symboles["Start Again"]);
+                webdingsTextOption2.SetText(text.symboles["Start Again"]);
+
+                leftButton.buttonState = StoryState.Start;
+                rightButton.buttonState = StoryState.Start;
 
                 break;
 
@@ -164,11 +130,18 @@ public class StateMachine : MonoBehaviour
                 webdingsTextOption1.SetText(text.symboles["Left"]);
                 webdingsTextOption2.SetText(text.symboles["Right"]);
 
+                leftButton.buttonState = StoryState.Left;
+                rightButton.buttonState = StoryState.Right;
+
                 break;
 
             case StoryState.Scream:
                 webdingsTextStory.SetText(text.symboles["Death"]);
                 webdingsTextOption1.SetText(text.symboles["Start Again"]);
+                webdingsTextOption2.SetText(text.symboles["Start Again"]);
+
+                leftButton.buttonState = StoryState.Start;
+                rightButton.buttonState = StoryState.Start;
 
                 break;
 
@@ -177,34 +150,40 @@ public class StateMachine : MonoBehaviour
                 webdingsTextOption1.SetText(text.symboles["Open1"]);
                 webdingsTextOption2.SetText(text.symboles["Open2"]);
 
+                leftButton.buttonState = StoryState.Open1;
+                rightButton.buttonState = StoryState.Open2;
+
                 break;
 
             case StoryState.Right:
                 webdingsTextStory.SetText(text.symboles["Loop"] + text.symboles["House"] + text.symboles["Someone"] + text.symboles["Knife"] + text.symboles["Death"]);
                 webdingsTextOption1.SetText(text.symboles["Start Again"]);
+                webdingsTextOption2.SetText(text.symboles["Start Again"]);
+
+                leftButton.buttonState = StoryState.Start;
+                rightButton.buttonState = StoryState.Start;
 
                 break;
 
             case StoryState.Open1:
                 webdingsTextStory.SetText(text.symboles["Yeah!"] + text.symboles["House"] + text.symboles["Martini"]);
                 webdingsTextOption1.SetText(text.symboles["Start Again"]);
-                
+                webdingsTextOption2.SetText(text.symboles["Start Again"]);
+
+                leftButton.buttonState = StoryState.Start;
+                rightButton.buttonState = StoryState.Start;
+              
                 break;
 
             case StoryState.Open2:
                 webdingsTextStory.SetText(text.symboles["Bomb"] + text.symboles["Death"]);
                 webdingsTextOption1.SetText(text.symboles["Start Again"]);
+                webdingsTextOption2.SetText(text.symboles["Start Again"]);
 
-                break;
-
-            case StoryState.Pause:
-
-            //musique s'arrete
-            //pour sortir de Pause, recliquer sur pause
+                leftButton.buttonState = StoryState.Start;
+                rightButton.buttonState = StoryState.Start;
 
                 break;
         }
     }
-
-
 }
