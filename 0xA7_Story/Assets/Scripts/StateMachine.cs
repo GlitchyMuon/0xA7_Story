@@ -39,6 +39,8 @@ public class StateMachine : MonoBehaviour
     [SerializeField]
     private TMP_Text webdingsTextOption2;
 
+    public OnClickSwitchState leftButton;
+    public OnClickSwitchState rightButton;
 
     void Start()
     {
@@ -100,17 +102,18 @@ public class StateMachine : MonoBehaviour
  
     }
 
-    void SwitchState()
+    public void SwitchState()
     {
         switch(state)
         {
             case StoryState.Start:
-                webdingsTextStory.SetText(text.symboles["Hear"] + text.symboles["House"] + text.symboles["Moon"]);
+                //webdingsTextStory.SetText(text.symboles["Alone"] + text.symboles["House"] + text.symboles["Moon"]+ text.symboles["Start"]+ text.symboles["Quit"]+ text.symboles["Pause"]+ text.symboles["Hear"]+ text.symboles["Bell"]+ text.symboles["Alien"]+ text.symboles["Flowers"]+ text.symboles["Invite"]+ text.symboles["No"]+ text.symboles["Sad"]+ text.symboles["Follow"]+ text.symboles["Earth"]+ text.symboles["Discussion"]+ text.symboles["Heart"]+ text.symboles["Radio"]+ text.symboles["Music"]+ text.symboles["Temperature"]+ text.symboles["Bed"]+ text.symboles["Pepper"]+ text.symboles["Scissor"]+ text.symboles["Happy"]+ text.symboles["See"]+ text.symboles["Someone"]+ text.symboles["Knife"]+ text.symboles["Bike"]+ text.symboles["Scream"]+ text.symboles["Forest"]+ text.symboles["Lightning"]+ text.symboles["Death"]+ text.symboles["Left"]+ text.symboles["Right"]+ text.symboles["Loop"]+ text.symboles["Present"]+ text.symboles["Open1"]+ text.symboles["Yeah!"]+ text.symboles["Martini"]+ text.symboles["Bomb"]);
+                webdingsTextStory.SetText(text.symboles["Alone"] + text.symboles["House"] + text.symboles["Moon"]);
                 webdingsTextOption1.SetText(text.symboles["Hear"]);
                 webdingsTextOption2.SetText(text.symboles["See"]);
 
-                // if button 1 is clicked -- state = Hear
-                // if button 2 is clicked -- state = See
+                leftButton.buttonState = StoryState.Hear;
+                rightButton.buttonState = StoryState.See;
 
                 break;
 
@@ -118,6 +121,9 @@ public class StateMachine : MonoBehaviour
                 webdingsTextStory.SetText(text.symboles["Bell"] + text.symboles["Alien"] + text.symboles["Flowers"]);
                 webdingsTextOption1.SetText(text.symboles["Invite"]);
                 webdingsTextOption2.SetText(text.symboles["Follow"]);
+
+                leftButton.buttonState = StoryState.Hear;
+                rightButton.buttonState = StoryState.See;
                 
                 break;
 
