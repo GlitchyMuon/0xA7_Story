@@ -34,14 +34,14 @@ public class MouseControl : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
+
     void Start()
     {
         clickableSprite = GetComponent<SpriteRenderer>().sprite;
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
@@ -58,9 +58,10 @@ public class MouseControl : MonoBehaviour
 
     void OnMouseClicked(InputAction.CallbackContext context)
     {
-        if (MouseIsHovering == true) {
-            IsClicked = true;
-           //manager.FaceUp(this); -> remplacer par une fonction Coroutine qui gérera les états, l'animation, dans un manager, dont on a besoin ici
-        } //le paramètre c'est le MouseControl actuel donc this
+        if (MouseIsHovering == true) 
+        {
+            IsClicked = true;          
+        } 
     }
+
 }
