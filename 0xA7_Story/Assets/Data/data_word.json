@@ -3,167 +3,171 @@
 [
     {
       "key" :"Start",
-      "value": "\uD83D\uDD6E"
+      "value": "\u0039"
     },
     {
-      "key" :"Break",
-      "value": "\uD83C\uDFDD"
+      "key" :"Pause",
+      "value": "\u0040"
     },
     {
       "key" :"Quit",
-      "value": "\uD83D\uDDD8"
+      "value": "\u0041"
     },
     {
       "key" :"Alone",
-      "value": "\uD83D\uDC64"
+      "value": "\u0001"
     },
     {
       "key" :"House",
-      "value": "\uD83C\uDFE0"
+      "value": "\u0002"
     },
     {
       "key" :"Moon",
-      "value": "\uD83C\uDF1C"
+      "value": "\u0003"
     },
     {
       "key" :"Hear",
-      "value": "\uD83D\uDC42"
+      "value": "\u0004"
     },
     {
       "key" :"Bell",
-      "value": "\uD83D\uDECE"
+      "value": "\u0007"
     },
     {
       "key" :"Alien",
-      "value": "\uD83D\uDC7D"
+      "value": "\u0008"
     },
     {
       "key" :"Flowers",
-      "value": "\uD83D\uDC90"
+      "value": "\u0009"
     },
     {
       "key" :"Invite",
-      "value": "\uD83D\uDECF"
+      "value": "\u0012"
     },
     {
       "key" :"No",
-      "value": "\uD83D\uDD93"
+      "value": "\u0014"
     },
     {
       "key" :"Sad",
-      "value": "\u2639"
+      "value": "\u0015"
     },
     {
       "key" :"Follow",
-      "value": "\uD83D\uDEF0"
+      "value": "\u0013"
     },
     {
       "key" :"Earth",
-      "value": "\uD83C\uDF0D"
+      "value": "\u0016"
     },
     {
       "key" :"Discussion",
-      "value": "\uD83D\uDDEA"
+      "value": "\u0017"
     },
     {
       "key" :"Heart",
-      "value":"\uD83D\uDC94"
+      "value":"\u0018"
     },
     {
       "key" :"Radio",
-      "value":"\uD83D\uDCFE"
+      "value":"\u0019"
     },
     {
       "key" :"Music",
-      "value":"\uD83C\uDFB5"
+      "value":"\u0038"
     },
     {
       "key" :"Temperature",
-      "value":"\uD83C\uDF21"
+      "value":"\u0020"
     },
     {
       "key" :"Bed",
-      "value":"\uD83D\uDECF"
+      "value":"\u0021"
     },
     {
       "key" :"Pepper",
-      "value":"\uD83C\uDF36"
+      "value":"\u0022"
     },
     {
       "key" :"Scissor",
-      "value":"\u2702"
+      "value":"\u0023"
     },
     {
       "key" :"Happy",
-      "value":"\u263A"
+      "value":"\u0024"
     },
     {
       "key" :"See",
-      "value":"\uD83D\uDC41"
+      "value":"\u0005"
     },
     {
       "key" :"Someone",
-      "value":"\uD83D\uDD74"
+      "value":"\u0010"
     },
     {
       "key" :"Knife",
-      "value":"\uD83D\uDDC1"
+      "value":"\u0011"
     },
     {
       "key" :"Bike",
-      "value":"\uD83D\uDEB2"
+      "value":"\u0025"
     },
     {
       "key" :"Scream",
-      "value":"\uD83D\uDE03"
+      "value":"\u0026"
     },
     {
       "key" :"Forest",
-      "value":"\uD83C\uDFDE"
+      "value":"\u0027"
     },
     {
       "key" :"Lightning",
-      "value":"\uD83C\uDF29"
+      "value":"\u0028"
     },
     {
       "key" :"Death",
-      "value":"\u2620"
+      "value":"\u0029"
     },
     {
       "key" :"Left",
-      "value":"\uD83D\uDC48"
+      "value":"\u0030"
     },
     {
       "key" :"Right",
-      "value":"\uD83D\uDC49"
+      "value":"\u0031"
     },
     {
       "key" :"Loop",
-      "value":"\uD83D\uDC49"
+      "value":"\u0033"
     },
     {
       "key" :"Present",
-      "value":"\uD83C\uDF81"
+      "value":"\u0032"
     },
     {
       "key" :"Open1",
-      "value":"\uD83D\uDDC3"
+      "value":"\u0034"
     },
     {
       "key" :"Open2",
-      "value":"\uD83D\uDDC3"
+      "value":"\u0034"
     },
     {
       "key" :"Yeah!",
-      "value":"\uD83D\uDCA0"
+      "value":"\u0035"
     },
     {
       "key" :"Martini",
-      "value":"\uD83C\uDF78"
+      "value":"\u0036"
     },
     {
       "key" :"Bomb",
-      "value":"\uD83D\uDCA3"
+      "value":"\u0037"
+    },
+    {
+      "key" :"Start Again",
+      "value":"\u0006"
     } 
 ]
 }
